@@ -112,11 +112,10 @@
          document.getElementById("image02").style.backgroundImage = "url("+images[x] +")"; }    
                                                                                                           
   window.onbeforeunload = confirmExit;
-   function removeHash () { 
-   history.pushState("", document.title, window.location.pathname
+   function removeHash () 
+    { history.pushState("", document.title, window.location.pathname
     + window.location.search); }
-         
-  }
+        
 </script>
     </script>
   </body>
