@@ -109,7 +109,15 @@
        { var images = ["/a1da87f3d6406eecc91c734b0e82573e.jpg","anthony-fomin-3GfJsiXCrME-unsplash.jpg","antonio-secerovic-cD8U2s9mbnc-unsplash.jpg"];
          var size = images.length;
          var x = Math.floor(size * Math.random());
-         document.getElementById("image02").style.backgroundImage = "url("+images[x] +")"; }                                                                                                   
+         document.getElementById("image02").style.backgroundImage = "url("+images[x] +")"; }    
+                                                                                                          
+  window.onbeforeunload = confirmExit;
+   function removeHash () { 
+   history.pushState("", document.title, window.location.pathname
+    + window.location.search); }
+         
+  }
+</script>
     </script>
   </body>
 </html>
